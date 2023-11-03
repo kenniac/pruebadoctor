@@ -28,7 +28,7 @@ class ConsultasScreen extends StatelessWidget {
                     onPressed: () {
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => CallPage(consulta: consulta),
+                        builder: (context) => CallPage(),
                       ));
  
         

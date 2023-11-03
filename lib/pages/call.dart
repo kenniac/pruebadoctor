@@ -2,23 +2,14 @@ import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+
+class CallPage extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: MyHomePage(),
-    );
-  }
+  _CallPageState createState() => _CallPageState();
 }
 
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+class _CallPageState extends State<CallPage> {
   final _appId = 'a446a2d4e16f4202b37a121f43cdcca0'; // Reemplaza con tu App ID de Agora
   final _channelName = 'canal-de-prueba';
 
